@@ -1,0 +1,16 @@
+# Reference materials (not for deployment)
+Reference/
+
+# Build/utility scripts
+extract_images.py
+optimize_images.py
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+*.swp
+*.swo
