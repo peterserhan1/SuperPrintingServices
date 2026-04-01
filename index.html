@@ -9,269 +9,198 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
-  <style>
-    .reveal{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease}
-    .reveal.revealed{opacity:1;transform:translateY(0)}
-    .reveal-delay-1{transition-delay:.1s}
-    .reveal-delay-2{transition-delay:.2s}
-    .reveal-delay-3{transition-delay:.3s}
-    .reveal-delay-4{transition-delay:.4s}
-  </style>
 </head>
 <body>
 
-<!-- ════════ NAVIGATION ════════ -->
-<nav class="navbar">
+<!-- ═══ NAV ═══ -->
+<nav class="nav">
   <div class="container">
-    <a href="#" class="nav-logo">
-      <div class="nav-logo-icon">SPS</div>
+    <a href="#" class="nav-brand">
+      <div class="nav-mark">SPS</div>
       <span>Super Printing Services</span>
     </a>
-    <ul class="nav-links">
+    <ul class="nav-menu">
       <li><a href="#about">About</a></li>
       <li><a href="#production">Production</a></li>
       <li><a href="#services">Services</a></li>
-      <li><a href="#gallery">Portfolio</a></li>
-      <li><a href="#contact" class="nav-cta">Get in Touch</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact" class="cta">Contact</a></li>
     </ul>
-    <button class="nav-toggle" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
-<!-- ════════ HERO ════════ -->
+<!-- ═══ HERO ═══ -->
 <section class="hero" id="hero">
-  <div class="hero-bg">
-    <img src="assets/images/instore-branding/instore-branding_004.jpg" alt="" loading="eager" class="hero-bg-1">
-    <img src="assets/images/display-stands/display-stands_001.jpg" alt="" loading="eager" class="hero-bg-2">
-    <img src="assets/images/exhibitions/exhibitions_page_09THEATRE_1.jpg" alt="" loading="eager" class="hero-bg-3">
+  <div class="hero-slides">
+    <img src="assets/images/exhibitions/exhibitions_page_09THEATRE_1.jpg" alt="" loading="eager">
+    <img src="assets/images/exhibitions/exhibitions_006.jpg" alt="" loading="eager">
+    <img src="assets/images/exhibitions/exhibitions_014.jpg" alt="" loading="eager">
+    <img src="assets/images/exhibitions/exhibitions_016.jpg" alt="" loading="eager">
+    <img src="assets/images/exhibitions/exhibitions_003.jpg" alt="" loading="eager">
   </div>
-  <div class="hero-overlay"></div>
-  <div class="container hero-inner">
-    <div class="hero-content">
-      <p class="hero-location">Roumieh, Lebanon</p>
-      <h1 class="hero-title">Super Printing<br><span>Services</span></h1>
-      <div class="hero-rule"></div>
-      <p class="hero-tagline">End-to-end display production — from graphic design and digital printing through die-cutting and assembly. We build the stands, branding, and exhibition environments that elevate retail.</p>
-      <div class="hero-btns">
+  <div class="hero-dim"></div>
+  <div class="container" style="position:relative;z-index:2;display:flex;align-items:center;min-height:inherit;height:100%">
+    <div class="hero-body">
+      <p class="hero-loc">Roumieh, Lebanon</p>
+      <h1 class="hero-title">Super Printing<em>Services</em></h1>
+      <div class="hero-line"></div>
+      <p class="hero-sub">End-to-end display production — from graphic design and digital printing through die-cutting and assembly. We build the stands, branding, and exhibition environments that elevate retail.</p>
+      <div class="hero-actions">
         <a href="#services" class="btn btn-primary">Our Services</a>
-        <a href="#gallery" class="btn btn-outline">View Portfolio</a>
+        <a href="#portfolio" class="btn btn-ghost">View Portfolio</a>
       </div>
     </div>
-    <div class="hero-stats-bar">
-      <div class="hero-stat">
-        <div class="number counter" data-target="500" data-suffix="+">0</div>
-        <div class="label">Projects Delivered</div>
+  </div>
+  <div class="hero-counters">
+    <div class="container">
+      <div class="hero-counter">
+        <span class="val counter" data-to="500" data-suffix="+">0</span>
+        <span class="lbl">Projects Delivered</span>
       </div>
-      <div class="hero-stat-divider"></div>
-      <div class="hero-stat">
-        <div class="number counter" data-target="15" data-suffix="+">0</div>
-        <div class="label">Years Experience</div>
+      <div class="hero-counter">
+        <span class="val counter" data-to="15" data-suffix="+">0</span>
+        <span class="lbl">Years Experience</span>
       </div>
-      <div class="hero-stat-divider"></div>
-      <div class="hero-stat">
-        <div class="number counter" data-target="100" data-suffix="+">0</div>
-        <div class="label">Brand Partners</div>
+      <div class="hero-counter">
+        <span class="val counter" data-to="100" data-suffix="+">0</span>
+        <span class="lbl">Brand Partners</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ════════ ABOUT ════════ -->
-<section class="about section-padding" id="about">
+<!-- ═══ ABOUT ═══ -->
+<section class="about section" id="about">
   <div class="container">
-    <div class="about-grid">
-      <div class="about-image reveal">
+    <div class="about-wrap">
+      <div class="about-img reveal">
         <img src="assets/images/production/production_page_Production_Machinery_3.jpg" alt="Our production facility">
-        <div class="badge">Full In-House<br>Production</div>
+        <div class="tag">Full In-House<br>Production</div>
       </div>
-      <div class="about-content reveal reveal-delay-1">
-        <span class="section-label">Who We Are</span>
+      <div class="about-text reveal reveal-d1">
+        <span class="label">Who We Are</span>
         <h3>End-to-End Printing &amp; Display Manufacturing</h3>
         <p>Super Printing Services is a full-service printing and display production company based in Roumieh, Lebanon. We operate a vertically integrated facility — from graphic design and high-resolution digital printing through lamination, die-cutting, and final assembly.</p>
         <p>Our mission is to deliver retail-ready display solutions that capture attention and drive sales, combining quality craftsmanship with rapid turnaround across the MENA region.</p>
-        <div class="about-features">
-          <div class="about-feature">
-            <div class="icon">&#9998;</div>
-            <span>Graphic Design</span>
-          </div>
-          <div class="about-feature">
-            <div class="icon">&#9654;</div>
-            <span>Digital Printing</span>
-          </div>
-          <div class="about-feature">
-            <div class="icon">&#9638;</div>
-            <span>Lamination</span>
-          </div>
-          <div class="about-feature">
-            <div class="icon">&#10010;</div>
-            <span>Die-Cutting</span>
-          </div>
-          <div class="about-feature">
-            <div class="icon">&#9881;</div>
-            <span>Assembly Line</span>
-          </div>
-          <div class="about-feature">
-            <div class="icon">&#9733;</div>
-            <span>Quality Control</span>
-          </div>
+        <div class="cap-grid">
+          <div class="cap"><div class="ico">&#9998;</div><span>Graphic Design</span></div>
+          <div class="cap"><div class="ico">&#9654;</div><span>Digital Printing</span></div>
+          <div class="cap"><div class="ico">&#9638;</div><span>Lamination</span></div>
+          <div class="cap"><div class="ico">&#10010;</div><span>Die-Cutting</span></div>
+          <div class="cap"><div class="ico">&#9881;</div><span>Assembly Line</span></div>
+          <div class="cap"><div class="ico">&#9733;</div><span>Quality Control</span></div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ════════ PRODUCTION ════════ -->
-<section class="section-padding" id="production">
+<!-- ═══ PRODUCTION ═══ -->
+<section class="section" id="production">
   <div class="container">
-    <div class="section-header reveal">
-      <span class="section-label">Our Capabilities</span>
+    <div class="section-head reveal">
+      <span class="label">Our Capabilities</span>
       <h2>Production &amp; Machinery</h2>
-      <p>State-of-the-art equipment for every stage of the manufacturing pipeline — all under one roof.</p>
+      <p>State-of-the-art equipment for every stage of the pipeline — all under one roof.</p>
     </div>
-    <div class="production-grid">
-      <div class="production-card reveal">
-        <div class="icon">&#127912;</div>
+    <div class="prod-cards">
+      <div class="prod-card reveal">
+        <div class="ico">&#127912;</div>
         <h4>Graphic Design</h4>
-        <p>Creative concept development, structural engineering, and print-ready artwork tailored to your brand.</p>
+        <p>Concept development and print-ready artwork tailored to your brand.</p>
       </div>
-      <div class="production-card reveal reveal-delay-1">
-        <div class="icon">&#128424;</div>
+      <div class="prod-card reveal reveal-d1">
+        <div class="ico">&#128424;</div>
         <h4>Digital Printing</h4>
-        <p>High-resolution vinyl and roll-to-roll paper/cardboard digital printers for vibrant, durable output.</p>
+        <p>High-res vinyl and roll-to-roll paper/cardboard digital printers.</p>
       </div>
-      <div class="production-card reveal reveal-delay-2">
-        <div class="icon">&#128196;</div>
+      <div class="prod-card reveal reveal-d2">
+        <div class="ico">&#128196;</div>
         <h4>Lamination</h4>
-        <p>Protective film lamination for scratch resistance, UV protection, and premium surface finish.</p>
+        <p>Protective film for scratch resistance and premium finish.</p>
       </div>
-      <div class="production-card reveal reveal-delay-3">
-        <div class="icon">&#9986;</div>
+      <div class="prod-card reveal reveal-d3">
+        <div class="ico">&#9986;</div>
         <h4>Die-Cutting</h4>
-        <p>Precision platen die-cutting for carton and plastic sheets up to 135 &times; 185 cm, plus laser cutting for acrylics.</p>
+        <p>Platen die-cutting up to 135&times;185 cm plus laser cutting for acrylics.</p>
       </div>
-      <div class="production-card reveal reveal-delay-4">
-        <div class="icon">&#128736;</div>
-        <h4>Assembly Line</h4>
-        <p>Skilled manual and semi-automated assembly to deliver retail-ready displays, flat-packed or fully built.</p>
+      <div class="prod-card reveal reveal-d4">
+        <div class="ico">&#128736;</div>
+        <h4>Assembly</h4>
+        <p>Retail-ready displays delivered flat-packed or fully built.</p>
       </div>
     </div>
-
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;margin-top:3rem">
-      <div class="reveal" style="border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)">
-        <img src="assets/images/production/production_page_Production_Machinery_1.jpg" alt="High-res digital vinyl printer" style="width:100%;display:block" loading="lazy">
-      </div>
-      <div class="reveal reveal-delay-1" style="border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)">
-        <img src="assets/images/production/production_page_Production_Machinery_3.jpg" alt="Roll-to-roll digital printer" style="width:100%;display:block" loading="lazy">
-      </div>
-      <div class="reveal reveal-delay-2" style="border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)">
-        <img src="assets/images/production/production_page_Production_Machinery_5.jpg" alt="Die-cutting platen machine" style="width:100%;display:block" loading="lazy">
-      </div>
-      <div class="reveal reveal-delay-3" style="border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)">
-        <img src="assets/images/production/production_page_Production_Machinery_6.jpg" alt="Laser cutter for acrylics" style="width:100%;display:block" loading="lazy">
-      </div>
+    <div class="prod-photos">
+      <div class="reveal"><img src="assets/images/production/production_page_Production_Machinery_1.jpg" alt="Digital vinyl printer" loading="lazy"></div>
+      <div class="reveal reveal-d1"><img src="assets/images/production/production_page_Production_Machinery_3.jpg" alt="Roll-to-roll printer" loading="lazy"></div>
+      <div class="reveal reveal-d2"><img src="assets/images/production/production_page_Production_Machinery_5.jpg" alt="Die-cutting platen" loading="lazy"></div>
+      <div class="reveal reveal-d3"><img src="assets/images/production/production_page_Production_Machinery_6.jpg" alt="Laser cutter" loading="lazy"></div>
     </div>
   </div>
 </section>
 
-<!-- ════════ SERVICES ════════ -->
-<section class="services section-padding" id="services">
+<!-- ═══ SERVICES ═══ -->
+<section class="services-bg section" id="services">
   <div class="container">
-    <div class="section-header reveal">
-      <span class="section-label">What We Deliver</span>
+    <div class="section-head reveal">
+      <span class="label">What We Deliver</span>
       <h2>Our Services</h2>
-      <p>Comprehensive display and branding solutions tailored for retail, events, and outdoor environments.</p>
+      <p>Display and branding solutions for retail, events, and outdoor environments.</p>
     </div>
-    <div class="services-grid">
+    <div class="svc-list">
 
-      <!-- In-Store Branding -->
-      <div class="service-card reveal">
-        <div class="service-card-img">
-          <img src="assets/images/instore-branding/instore-branding_004.jpg" alt="In-store shelf branding" loading="lazy">
-          <div class="overlay"></div>
-        </div>
-        <div class="service-card-body">
+      <div class="svc reveal">
+        <div class="svc-img"><img src="assets/images/instore-branding/instore-branding_004.jpg" alt="In-store branding" loading="lazy"></div>
+        <div class="svc-body">
           <h3>In-Store Branding</h3>
           <p>Uplift existing shelves and customize product categories in supermarkets and retail stores. We work with wood, acrylic, metal, and integrate lighting — under-shelf LEDs, light-box headers, and digital screens.</p>
-          <div class="service-tags">
-            <span class="service-tag">Shelf Headers</span>
-            <span class="service-tag">Category Branding</span>
-            <span class="service-tag">Light Boxes</span>
-            <span class="service-tag">LED Integration</span>
+          <div class="svc-tags">
+            <span class="svc-tag">Shelf Headers</span><span class="svc-tag">Category Branding</span><span class="svc-tag">Light Boxes</span><span class="svc-tag">LED Integration</span>
           </div>
         </div>
       </div>
 
-      <!-- Temporary Display Stands -->
-      <div class="service-card reveal reveal-delay-1">
-        <div class="service-card-img">
-          <img src="assets/images/display-stands/display-stands_001.jpg" alt="Carton display stands" loading="lazy">
-          <div class="overlay"></div>
-        </div>
-        <div class="service-card-body">
+      <div class="svc reveal">
+        <div class="svc-img"><img src="assets/images/display-stands/display-stands_001.jpg" alt="Temporary stands" loading="lazy"></div>
+        <div class="svc-body">
           <h3>Temporary Display Stands</h3>
           <p>Cost-effective stands made from corrugated carton or corrugated plastics — ideal for short-term promotions lasting 3 to 12 months. Lightweight, easy to ship, and fully branded.</p>
-          <div class="service-tags">
-            <span class="service-tag">Corrugated Carton</span>
-            <span class="service-tag">Corrugated Plastic</span>
-            <span class="service-tag">Budget Friendly</span>
+          <div class="svc-tags">
+            <span class="svc-tag">Corrugated Carton</span><span class="svc-tag">Corrugated Plastic</span><span class="svc-tag">Budget Friendly</span>
           </div>
         </div>
       </div>
 
-      <!-- Permanent Stands -->
-      <div class="service-card reveal">
-        <div class="service-card-img">
-          <img src="assets/images/permanent-stands/permanent-stands_015.jpg" alt="Permanent PVC and metal stands" loading="lazy">
-          <div class="overlay"></div>
-        </div>
-        <div class="service-card-body">
+      <div class="svc reveal">
+        <div class="svc-img"><img src="assets/images/permanent-stands/permanent-stands_015.jpg" alt="Permanent stands" loading="lazy"></div>
+        <div class="svc-body">
           <h3>Permanent Display Stands</h3>
-          <p>Built to last up to 5 years with proper maintenance. Constructed from PVC, wood, acrylic, or metal — these stands provide a premium, long-term retail presence for your brand.</p>
-          <div class="service-tags">
-            <span class="service-tag">Metal</span>
-            <span class="service-tag">PVC</span>
-            <span class="service-tag">Wood</span>
-            <span class="service-tag">Acrylic</span>
+          <p>Built to last up to 5 years with proper maintenance. Constructed from PVC, wood, acrylic, or metal — premium long-term retail presence for your brand.</p>
+          <div class="svc-tags">
+            <span class="svc-tag">Metal</span><span class="svc-tag">PVC</span><span class="svc-tag">Wood</span><span class="svc-tag">Acrylic</span>
           </div>
         </div>
       </div>
 
-      <!-- Exhibitions & Events -->
-      <div class="service-card reveal reveal-delay-1">
-        <div class="service-card-img">
-          <img src="assets/images/exhibitions/exhibitions_page_09THEATRE_1.jpg" alt="Exhibition stand build" loading="lazy">
-          <div class="overlay"></div>
-        </div>
-        <div class="service-card-body">
+      <div class="svc reveal">
+        <div class="svc-img"><img src="assets/images/exhibitions/exhibitions_page_09THEATRE_1.jpg" alt="Exhibition build" loading="lazy"></div>
+        <div class="svc-body">
           <h3>Exhibitions &amp; Events</h3>
-          <p>Complete exhibition and event stand production — combining wood, metal, acrylic, and lighting to create immersive brand experiences that stand out on the show floor.</p>
-          <div class="service-tags">
-            <span class="service-tag">Custom Builds</span>
-            <span class="service-tag">Modular Systems</span>
-            <span class="service-tag">Lighting</span>
-            <span class="service-tag">Theatres</span>
+          <p>Complete exhibition and event stand production — combining wood, metal, acrylic, and lighting to create immersive brand experiences on the show floor.</p>
+          <div class="svc-tags">
+            <span class="svc-tag">Custom Builds</span><span class="svc-tag">Modular Systems</span><span class="svc-tag">Lighting</span><span class="svc-tag">Theatres</span>
           </div>
         </div>
       </div>
 
-      <!-- Outdoor / Vehicle Branding -->
-      <div class="service-card reveal" style="grid-column:1/-1">
-        <div style="display:grid;grid-template-columns:1fr 1fr;min-height:320px">
-          <div class="service-card-img" style="height:100%">
-            <img src="assets/images/exhibitions/exhibitions_003.jpg" alt="Vehicle branding" loading="lazy">
-            <div class="overlay"></div>
-          </div>
-          <div class="service-card-body" style="display:flex;flex-direction:column;justify-content:center">
-            <h3>Outdoor Posters &amp; Vehicle Branding</h3>
-            <p>Large-format outdoor posters, billboards, and full vehicle wraps. Durable vinyl printing with UV-resistant inks ensures your brand stays vibrant under any weather conditions.</p>
-            <div class="service-tags" style="margin-top:auto">
-              <span class="service-tag">Vehicle Wraps</span>
-              <span class="service-tag">Billboards</span>
-              <span class="service-tag">UV Resistant</span>
-              <span class="service-tag">Large Format</span>
-            </div>
+      <div class="svc reveal">
+        <div class="svc-img"><img src="assets/images/exhibitions/exhibitions_003.jpg" alt="Vehicle branding" loading="lazy"></div>
+        <div class="svc-body">
+          <h3>Outdoor Posters &amp; Vehicle Branding</h3>
+          <p>Large-format outdoor posters, billboards, and full vehicle wraps. Durable vinyl printing with UV-resistant inks keeps your brand vibrant in any weather.</p>
+          <div class="svc-tags">
+            <span class="svc-tag">Vehicle Wraps</span><span class="svc-tag">Billboards</span><span class="svc-tag">UV Resistant</span><span class="svc-tag">Large Format</span>
           </div>
         </div>
       </div>
@@ -280,258 +209,107 @@
   </div>
 </section>
 
-<!-- ════════ GALLERY ════════ -->
-<section class="gallery section-padding" id="gallery">
+<!-- ═══ PORTFOLIO ═══ -->
+<section class="portfolio section" id="portfolio">
   <div class="container">
-    <div class="section-header reveal">
-      <span class="section-label">Our Work</span>
+    <div class="section-head reveal">
+      <span class="label">Our Work</span>
       <h2>Project Portfolio</h2>
-      <p>A selection of display stands, branding projects, and exhibition builds we've delivered for leading brands.</p>
+      <p>Selected display stands, branding projects, and exhibition builds delivered for leading brands.</p>
     </div>
-    <div class="gallery-filters reveal">
-      <button class="gallery-filter active" data-filter="all">All Projects</button>
-      <button class="gallery-filter" data-filter="display-stands">Display Stands</button>
-      <button class="gallery-filter" data-filter="instore">In-Store Branding</button>
-      <button class="gallery-filter" data-filter="permanent">Permanent Stands</button>
-      <button class="gallery-filter" data-filter="exhibitions">Exhibitions</button>
-      <button class="gallery-filter" data-filter="production">Production</button>
+    <div class="pf-tabs reveal">
+      <button class="pf-tab on" data-cat="all">All</button>
+      <button class="pf-tab" data-cat="displays">Display Stands</button>
+      <button class="pf-tab" data-cat="instore">In-Store</button>
+      <button class="pf-tab" data-cat="permanent">Permanent</button>
+      <button class="pf-tab" data-cat="exhibitions">Events</button>
+      <button class="pf-tab" data-cat="production">Production</button>
     </div>
-    <div class="gallery-grid">
+    <div class="pf-grid">
 
-      <!-- Display Stands -->
-      <div class="gallery-item" data-category="display-stands">
-        <img src="assets/images/display-stands/display-stands_001.jpg" alt="Tang carton stand" loading="lazy">
-        <div class="gallery-overlay"><span>&#43;</span></div>
-      </div>
-      <div class="gallery-item" data-category="display-stands">
-        <img src="assets/images/display-stands/display-stands_002.jpg" alt="Corrugated display" loading="lazy">
-        <div class="gallery-overlay"><span>&#43;</span></div>
-      </div>
-      <div class="gallery-item" data-category="display-stands">
-        <img src="assets/images/display-stands/display-stands_003.jpg" alt="Carton shelf stand" loading="lazy">
-        <div class="gallery-overlay"><span>&#43;</span></div>
-      </div>
-      <div class="gallery-item" data-category="display-stands">
-        <img src="assets/images/display-stands/display-stands_006.jpg" alt="Branded carton display" loading="lazy">
-        <div class="gallery-overlay"><span>&#43;</span></div>
-      </div>
-      <div class="gallery-item" data-category="display-stands">
-        <img src="assets/images/display-stands/display-stands_008.jpg" alt="Promotional carton stand" loading="lazy">
-        <div class="gallery-overlay"><span>&#43;</span></div>
-      </div>
-      <div class="gallery-item" data-category="display-stands">
-        <img src="assets/images/display-stands/display-stands_010.jpg" alt="Corrugated plastic display" loading="lazy">
-        <div class="gallery-overlay"><span>&#43;</span></div>
-      </div>
-      <div class="gallery-item" data-category="display-stands">
-        <img src="assets/images/display-stands/display-stands_015.jpg" alt="Display stand assembly" loading="lazy">
-        <div class="gallery-overlay"><span>&#43;</span></div>
-      </div>
+      <div class="pf-item wide" data-cat="displays"><img src="assets/images/display-stands/display-stands_001.jpg" alt="Tang carton stand" loading="lazy"><div class="pf-over"><span>Carton Display — Tang</span></div></div>
+      <div class="pf-item" data-cat="displays"><img src="assets/images/display-stands/display-stands_003.jpg" alt="Carton shelf stand" loading="lazy"><div class="pf-over"><span>Corrugated Shelf Unit</span></div></div>
+      <div class="pf-item" data-cat="displays"><img src="assets/images/display-stands/display-stands_006.jpg" alt="Branded carton display" loading="lazy"><div class="pf-over"><span>Branded Display</span></div></div>
+      <div class="pf-item" data-cat="displays"><img src="assets/images/display-stands/display-stands_008.jpg" alt="Promotional stand" loading="lazy"><div class="pf-over"><span>Promotional Stand</span></div></div>
+      <div class="pf-item" data-cat="displays"><img src="assets/images/display-stands/display-stands_010.jpg" alt="Corrugated plastic" loading="lazy"><div class="pf-over"><span>Corrugated Plastic</span></div></div>
 
-      <!-- In-Store Branding -->
-      <div class="gallery-item" data-category="instore">
-        <img src="assets/images/instore-branding/instore-branding_001.jpg" alt="Shelf header branding" loading="lazy">
-        <div class="gallery-overlay"><span>&#43;</span></div>
-      </div>
-      <div class="gallery-item" data-category="instore">
-        <img src="assets/images/instore-branding/instore-branding_004.jpg" alt="Master chips shelf branding" loading="lazy">
-        <div class="gallery-overlay"><span>&#43;</span></div>
-      </div>
-      <div class="gallery-item" data-category="instore">
-        <img src="assets/images/instore-branding/instore-branding_007.jpg" alt="Supermarket category branding" loading="lazy">
-        <div class="gallery-overlay"><span>&#43;</span></div>
-      </div>
-      <div class="gallery-item" data-category="instore">
-        <img src="assets/images/instore-branding/instore-branding_010.jpg" alt="Pillar branding" loading="lazy">
-        <div class="gallery-overlay"><span>&#43;</span></div>
-      </div>
-      <div class="gallery-item" data-category="instore">
-        <img src="assets/images/instore-branding/instore-branding_022.jpg" alt="Light box header" loading="lazy">
-        <div class="gallery-overlay"><span>&#43;</span></div>
-      </div>
-      <div class="gallery-item" data-category="instore">
-        <img src="assets/images/instore-branding/instore-branding_025.jpg" alt="Under-shelf LED branding" loading="lazy">
-        <div class="gallery-overlay"><span>&#43;</span></div>
-      </div>
-      <div class="gallery-item" data-category="instore">
-        <img src="assets/images/instore-branding/instore-branding_030.jpg" alt="End-cap branding" loading="lazy">
-        <div class="gallery-overlay"><span>&#43;</span></div>
-      </div>
+      <div class="pf-item" data-cat="instore"><img src="assets/images/instore-branding/instore-branding_001.jpg" alt="Shelf header" loading="lazy"><div class="pf-over"><span>Shelf Header — Domo</span></div></div>
+      <div class="pf-item wide" data-cat="instore"><img src="assets/images/instore-branding/instore-branding_004.jpg" alt="Master chips branding" loading="lazy"><div class="pf-over"><span>Category Branding — Master</span></div></div>
+      <div class="pf-item" data-cat="instore"><img src="assets/images/instore-branding/instore-branding_007.jpg" alt="Supermarket branding" loading="lazy"><div class="pf-over"><span>Supermarket Branding</span></div></div>
+      <div class="pf-item" data-cat="instore"><img src="assets/images/instore-branding/instore-branding_022.jpg" alt="Light box header" loading="lazy"><div class="pf-over"><span>Light Box Headers</span></div></div>
+      <div class="pf-item" data-cat="instore"><img src="assets/images/instore-branding/instore-branding_025.jpg" alt="LED shelving" loading="lazy"><div class="pf-over"><span>LED Shelf Integration</span></div></div>
 
-      <!-- Permanent Stands -->
-      <div class="gallery-item" data-category="permanent">
-        <img src="assets/images/permanent-stands/permanent-stands_001.jpg" alt="Metal display stand" loading="lazy">
-        <div class="gallery-overlay"><span>&#43;</span></div>
-      </div>
-      <div class="gallery-item" data-category="permanent">
-        <img src="assets/images/permanent-stands/permanent-stands_004.jpg" alt="PVC display stand" loading="lazy">
-        <div class="gallery-overlay"><span>&#43;</span></div>
-      </div>
-      <div class="gallery-item" data-category="permanent">
-        <img src="assets/images/permanent-stands/permanent-stands_006.jpg" alt="Metal branded stand" loading="lazy">
-        <div class="gallery-overlay"><span>&#43;</span></div>
-      </div>
-      <div class="gallery-item" data-category="permanent">
-        <img src="assets/images/permanent-stands/permanent-stands_012.jpg" alt="Wood display" loading="lazy">
-        <div class="gallery-overlay"><span>&#43;</span></div>
-      </div>
-      <div class="gallery-item" data-category="permanent">
-        <img src="assets/images/permanent-stands/permanent-stands_015.jpg" alt="PVC stand group" loading="lazy">
-        <div class="gallery-overlay"><span>&#43;</span></div>
-      </div>
-      <div class="gallery-item" data-category="permanent">
-        <img src="assets/images/permanent-stands/permanent-stands_018.jpg" alt="Wooden shelf stand" loading="lazy">
-        <div class="gallery-overlay"><span>&#43;</span></div>
-      </div>
-      <div class="gallery-item" data-category="permanent">
-        <img src="assets/images/permanent-stands/permanent-stands_023.jpg" alt="Acrylic stand" loading="lazy">
-        <div class="gallery-overlay"><span>&#43;</span></div>
-      </div>
+      <div class="pf-item" data-cat="permanent"><img src="assets/images/permanent-stands/permanent-stands_001.jpg" alt="Metal stand" loading="lazy"><div class="pf-over"><span>Metal Stand — Boecker</span></div></div>
+      <div class="pf-item" data-cat="permanent"><img src="assets/images/permanent-stands/permanent-stands_004.jpg" alt="PVC stand" loading="lazy"><div class="pf-over"><span>PVC Stand — Extra</span></div></div>
+      <div class="pf-item wide" data-cat="permanent"><img src="assets/images/permanent-stands/permanent-stands_015.jpg" alt="PVC stand group" loading="lazy"><div class="pf-over"><span>PVC Collection — Elegance</span></div></div>
+      <div class="pf-item" data-cat="permanent"><img src="assets/images/permanent-stands/permanent-stands_006.jpg" alt="Metal branded" loading="lazy"><div class="pf-over"><span>Metal Branded Stand</span></div></div>
+      <div class="pf-item" data-cat="permanent"><img src="assets/images/permanent-stands/permanent-stands_018.jpg" alt="Wooden stand" loading="lazy"><div class="pf-over"><span>Wooden Shelf Stand</span></div></div>
 
-      <!-- Exhibitions -->
-      <div class="gallery-item" data-category="exhibitions">
-        <img src="assets/images/exhibitions/exhibitions_003.jpg" alt="Vehicle wrap branding" loading="lazy">
-        <div class="gallery-overlay"><span>&#43;</span></div>
-      </div>
-      <div class="gallery-item" data-category="exhibitions">
-        <img src="assets/images/exhibitions/exhibitions_005.jpg" alt="Event stand interior" loading="lazy">
-        <div class="gallery-overlay"><span>&#43;</span></div>
-      </div>
-      <div class="gallery-item" data-category="exhibitions">
-        <img src="assets/images/exhibitions/exhibitions_006.jpg" alt="Exhibition kiosk" loading="lazy">
-        <div class="gallery-overlay"><span>&#43;</span></div>
-      </div>
-      <div class="gallery-item" data-category="exhibitions">
-        <img src="assets/images/exhibitions/exhibitions_007.jpg" alt="Event setup" loading="lazy">
-        <div class="gallery-overlay"><span>&#43;</span></div>
-      </div>
-      <div class="gallery-item" data-category="exhibitions">
-        <img src="assets/images/exhibitions/exhibitions_014.jpg" alt="Theatre build" loading="lazy">
-        <div class="gallery-overlay"><span>&#43;</span></div>
-      </div>
-      <div class="gallery-item" data-category="exhibitions">
-        <img src="assets/images/exhibitions/exhibitions_016.jpg" alt="Exhibition theatre" loading="lazy">
-        <div class="gallery-overlay"><span>&#43;</span></div>
-      </div>
+      <div class="pf-item wide" data-cat="exhibitions"><img src="assets/images/exhibitions/exhibitions_006.jpg" alt="Kiri kiosk" loading="lazy"><div class="pf-over"><span>Exhibition Kiosk — Kiri</span></div></div>
+      <div class="pf-item" data-cat="exhibitions"><img src="assets/images/exhibitions/exhibitions_014.jpg" alt="Picon event" loading="lazy"><div class="pf-over"><span>Event Build — Picon</span></div></div>
+      <div class="pf-item" data-cat="exhibitions"><img src="assets/images/exhibitions/exhibitions_003.jpg" alt="Vehicle wrap" loading="lazy"><div class="pf-over"><span>Vehicle Wrap</span></div></div>
+      <div class="pf-item" data-cat="exhibitions"><img src="assets/images/exhibitions/exhibitions_016.jpg" alt="Leibniz kiosk" loading="lazy"><div class="pf-over"><span>Retail Kiosk — Leibniz</span></div></div>
 
-      <!-- Production -->
-      <div class="gallery-item" data-category="production">
-        <img src="assets/images/production/production_page_Production_Machinery_1.jpg" alt="Vinyl digital printer" loading="lazy">
-        <div class="gallery-overlay"><span>&#43;</span></div>
-      </div>
-      <div class="gallery-item" data-category="production">
-        <img src="assets/images/production/production_page_Production_Machinery_3.jpg" alt="Roll-to-roll printer" loading="lazy">
-        <div class="gallery-overlay"><span>&#43;</span></div>
-      </div>
-      <div class="gallery-item" data-category="production">
-        <img src="assets/images/production/production_page_Production_Machinery_4.jpg" alt="Die-cutting platen small" loading="lazy">
-        <div class="gallery-overlay"><span>&#43;</span></div>
-      </div>
-      <div class="gallery-item" data-category="production">
-        <img src="assets/images/production/production_page_Production_Machinery_5.jpg" alt="Die-cutting platen large" loading="lazy">
-        <div class="gallery-overlay"><span>&#43;</span></div>
-      </div>
-      <div class="gallery-item" data-category="production">
-        <img src="assets/images/production/production_page_Production_Machinery_6.jpg" alt="Laser acrylic cutter" loading="lazy">
-        <div class="gallery-overlay"><span>&#43;</span></div>
-      </div>
-      <div class="gallery-item" data-category="production">
-        <img src="assets/images/production/production_page_Production_Machinery_7.jpg" alt="CNC cutting router" loading="lazy">
-        <div class="gallery-overlay"><span>&#43;</span></div>
-      </div>
+      <div class="pf-item" data-cat="production"><img src="assets/images/production/production_page_Production_Machinery_1.jpg" alt="Vinyl printer" loading="lazy"><div class="pf-over"><span>Digital Vinyl Printer</span></div></div>
+      <div class="pf-item" data-cat="production"><img src="assets/images/production/production_page_Production_Machinery_6.jpg" alt="Laser cutter" loading="lazy"><div class="pf-over"><span>Laser Cutter</span></div></div>
+      <div class="pf-item" data-cat="production"><img src="assets/images/production/production_page_Production_Machinery_7.jpg" alt="CNC router" loading="lazy"><div class="pf-over"><span>CNC Router</span></div></div>
 
     </div>
   </div>
 </section>
 
-<!-- ════════ CONTACT ════════ -->
-<section class="section-padding" id="contact">
+<!-- ═══ CONTACT ═══ -->
+<section class="section" id="contact">
   <div class="container">
-    <div class="section-header reveal">
-      <span class="section-label">Get Started</span>
+    <div class="section-head reveal">
+      <span class="label">Get Started</span>
       <h2>Let's Build Something Great</h2>
-      <p>Have a project in mind? Reach out and our team will get back to you within 24 hours.</p>
+      <p>Have a project in mind? Our team will get back to you within 24 hours.</p>
     </div>
-    <div class="contact-grid">
-      <div class="contact-info reveal">
-        <div class="contact-card">
-          <div class="icon">&#128205;</div>
-          <div>
-            <h4>Visit Us</h4>
-            <p>Roumieh, Mount Lebanon, Lebanon</p>
-          </div>
-        </div>
-        <div class="contact-card">
-          <div class="icon">&#128231;</div>
-          <div>
-            <h4>Email</h4>
-            <p>info@superprintingservices.com</p>
-          </div>
-        </div>
-        <div class="contact-card">
-          <div class="icon">&#128222;</div>
-          <div>
-            <h4>Call Us</h4>
-            <p>+961 XX XXX XXX</p>
-          </div>
-        </div>
-        <div class="contact-card">
-          <div class="icon">&#128338;</div>
-          <div>
-            <h4>Working Hours</h4>
-            <p>Mon – Fri: 8:00 AM – 5:00 PM<br>Sat: 8:00 AM – 1:00 PM</p>
-          </div>
-        </div>
+    <div class="contact-wrap">
+      <div class="c-cards reveal">
+        <div class="c-card"><div class="ico">&#128205;</div><div><h4>Visit Us</h4><p>Roumieh, Mount Lebanon, Lebanon</p></div></div>
+        <div class="c-card"><div class="ico">&#128231;</div><div><h4>Email</h4><p>info@superprintingservices.com</p></div></div>
+        <div class="c-card"><div class="ico">&#128222;</div><div><h4>Call Us</h4><p>+961 XX XXX XXX</p></div></div>
+        <div class="c-card"><div class="ico">&#128338;</div><div><h4>Working Hours</h4><p>Mon – Fri: 8 AM – 5 PM &middot; Sat: 8 AM – 1 PM</p></div></div>
       </div>
-      <div class="contact-form reveal reveal-delay-1">
-        <form id="contactForm" onsubmit="return false;">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="name">Full Name</label>
-              <input type="text" id="name" placeholder="Your name" required>
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" placeholder="you@company.com" required>
-            </div>
+      <div class="c-form reveal reveal-d1">
+        <form onsubmit="return false;">
+          <div class="f-row">
+            <div class="f-group"><label>Full Name</label><input type="text" placeholder="Your name" required></div>
+            <div class="f-group"><label>Email</label><input type="email" placeholder="you@company.com" required></div>
           </div>
-          <div class="form-group">
-            <label for="service">Service Interested In</label>
-            <select id="service">
+          <div class="f-group">
+            <label>Service</label>
+            <select>
               <option value="">Select a service</option>
               <option>In-Store Branding</option>
               <option>Temporary Display Stands</option>
               <option>Permanent Display Stands</option>
               <option>Exhibitions &amp; Events</option>
-              <option>Outdoor Posters / Vehicle Branding</option>
+              <option>Outdoor / Vehicle Branding</option>
               <option>Other</option>
             </select>
           </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" placeholder="Tell us about your project…" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary btn-submit">Send Message &#8594;</button>
+          <div class="f-group"><label>Message</label><textarea placeholder="Tell us about your project..." required></textarea></div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
         </form>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ════════ FOOTER ════════ -->
+<!-- ═══ FOOTER ═══ -->
 <footer class="footer">
   <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="#" class="nav-logo" style="margin-bottom:.5rem">
-          <div class="nav-logo-icon">SPS</div>
-          <span>Super Printing Services</span>
-        </a>
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="#" class="nav-brand"><div class="nav-mark">SPS</div><span>Super Printing Services</span></a>
         <p>Full-service printing and display production. From graphic design to assembled retail-ready displays — we handle it all in our integrated facility in Roumieh, Lebanon.</p>
       </div>
       <div>
         <h4>Services</h4>
-        <ul class="footer-links">
+        <ul class="foot-links">
           <li><a href="#services">In-Store Branding</a></li>
           <li><a href="#services">Temporary Stands</a></li>
           <li><a href="#services">Permanent Stands</a></li>
@@ -541,7 +319,7 @@
       </div>
       <div>
         <h4>Production</h4>
-        <ul class="footer-links">
+        <ul class="foot-links">
           <li><a href="#production">Graphic Design</a></li>
           <li><a href="#production">Digital Printing</a></li>
           <li><a href="#production">Lamination</a></li>
@@ -551,26 +329,26 @@
       </div>
       <div>
         <h4>Company</h4>
-        <ul class="footer-links">
+        <ul class="foot-links">
           <li><a href="#about">About Us</a></li>
-          <li><a href="#gallery">Portfolio</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
-    <div class="footer-bottom">
+    <div class="foot-bottom">
       <span>&copy; 2026 Super Printing Services. All rights reserved.</span>
       <span>Roumieh, Lebanon</span>
     </div>
   </div>
 </footer>
 
-<!-- ════════ LIGHTBOX ════════ -->
-<div class="lightbox">
-  <button class="lightbox-close" aria-label="Close">&times;</button>
-  <button class="lightbox-nav lightbox-prev" aria-label="Previous">&#8249;</button>
+<!-- ═══ LIGHTBOX ═══ -->
+<div class="lb">
+  <button class="lb-x" aria-label="Close">&times;</button>
+  <button class="lb-arr lb-prev" aria-label="Previous">&#8249;</button>
   <img src="" alt="Portfolio image">
-  <button class="lightbox-nav lightbox-next" aria-label="Next">&#8250;</button>
+  <button class="lb-arr lb-next" aria-label="Next">&#8250;</button>
 </div>
 
 <script src="assets/js/main.js"></script>
