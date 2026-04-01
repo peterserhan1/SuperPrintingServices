@@ -9,9 +9,20 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ── Mobile menu ── */
   const tog = document.querySelector('.nav-toggle');
   const menu = document.querySelector('.nav-menu');
-  tog.addEventListener('click', () => menu.classList.toggle('open'));
+  const backdrop = document.querySelector('.nav-backdrop');
+
+  function toggleMenu(open) {
+    const isOpen = typeof open === 'boolean' ? open : !menu.classList.contains('open');
+    menu.classList.toggle('open', isOpen);
+    tog.classList.toggle('active', isOpen);
+    backdrop.classList.toggle('show', isOpen);
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  }
+
+  tog.addEventListener('click', () => toggleMenu());
+  backdrop.addEventListener('click', () => toggleMenu(false));
   menu.querySelectorAll('a').forEach(a =>
-    a.addEventListener('click', () => menu.classList.remove('open'))
+    a.addEventListener('click', () => toggleMenu(false))
   );
 
   /* ── Hero slideshow ── */
